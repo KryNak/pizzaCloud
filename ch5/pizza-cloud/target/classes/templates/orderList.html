@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pizza Cloud Application</title>
+</head>
+<body>
+    <div th:each="order : ${orders}">
+        <p th:text="${order.id + ' - ' + order.deliveryStreet + ' - ' + order.deliveryState + ' - ' + order.deliveryZip
+        + ' - ' + order.ccCVV + ' - ' + order.ccNumber + ' - ' + order.ccExpiration}"></p>
+    </div>
+</body>
+</html>

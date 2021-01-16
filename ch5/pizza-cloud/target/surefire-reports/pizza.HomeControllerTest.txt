@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: pizza.HomeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.645 s <<< FAILURE! - in pizza.HomeControllerTest
+testHomePage  Time elapsed: 1.512 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "Welcome in..."
+     but: was "<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Cloud Application</title>
+</head>
+<body>
+    <h1>Welcome to...</h1>
+    <img src="/images/pizza.png">
+</body>
+</html>
+"
+	at pizza.HomeControllerTest.testHomePage(HomeControllerTest.java:25)
+

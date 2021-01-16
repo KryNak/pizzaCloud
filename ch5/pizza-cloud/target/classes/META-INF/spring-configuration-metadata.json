@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "pizza.orders",
+      "type": "pizza.configuration.OrderProps",
+      "sourceType": "pizza.configuration.OrderProps"
+    }
+  ],
+  "properties": [
+    {
+      "name": "pizza.orders.page-size",
+      "type": "java.lang.Integer",
+      "description": "Sets the maximum number of orders to display in a list.",
+      "sourceType": "pizza.configuration.OrderProps",
+      "defaultValue": 10
+    }
+  ],
+  "hints": []
+}
