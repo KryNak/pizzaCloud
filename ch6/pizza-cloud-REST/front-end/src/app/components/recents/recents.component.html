@@ -1,0 +1,16 @@
+<app-cloud-title>Admire some recently created taco masterpieces</app-cloud-title>
+
+<p>Even the greatest artists sometimes need to be inspired by the works of others.
+  Here are some of the most recently created tacos, designed by taco artists just like you...</p>
+
+<div class="recentsblock">
+  <div class="tacoblock" *ngFor="let pizza of recentPizzas">
+    <div class="tacoName"><span class="small">The</span><br/>"{{pizza.name}}"</div>
+    <div class="tacoDesc">
+      <ul class="commalist">
+        <li *ngFor="let ingredient of pizza.ingredients">{{ingredient.name}}</li>
+      </ul>
+    </div>
+    <app-little-button label="Order this taco"></app-little-button>
+  </div>
+</div>
